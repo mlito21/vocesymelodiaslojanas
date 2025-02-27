@@ -3853,12 +3853,12 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				width: 50%;
+				width: 100%;
 			}
 
 			#main > .posts > * {
 				padding: 4rem;
-				width: 50%;
+				width: 100%;
 			}
 
 			#main > .posts > article {
@@ -3884,12 +3884,12 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
-					width: 50%;
+					width: 100%;
 				}
 
 				#main > .posts > * {
 					padding: 2.5rem;
-					width: 50%;
+					width: 100%;
 				}
 
 			}
@@ -4687,3 +4687,95 @@ input, select, textarea {
 		}
 
 	}
+
+/* Sección del equipo */
+#equipo {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.7));
+}
+
+/* Contenedor de tarjetas */
+.team-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se acomoden solas en filas nuevas */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 30px; /* Espaciado entre tarjetas */
+    padding: 20px;
+}
+
+/* Tarjetas individuales */
+.team-card {
+    background: #fff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 45%; /* Ajustar el ancho al 45% del contenedor */
+    max-width: 500px; /* Límite de tamaño */
+    min-width: 320px; /* Mínimo tamaño */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen dentro de la tarjeta */
+.team-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0077cc;
+    margin-bottom: 15px;
+}
+
+/* Texto en las tarjetas */
+.team-card h3 {
+    font-size: 1.4rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.team-card .role {
+    font-weight: bold;
+    color: #0077cc;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Enlace de correo */
+.team-card a {
+    display: block;
+    margin-top: 10px;
+    color: #0077cc;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.team-card a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDAD */
+@media screen and (max-width: 1024px) {
+    .team-card {
+        width: 80%; /* En pantallas medianas, las tarjetas serán más anchas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-card {
+        width: 90%; /* En móviles, ocupan casi toda la pantalla */
+    }
+}
