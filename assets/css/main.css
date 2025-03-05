@@ -3853,12 +3853,12 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				width: 100%;
+				width: 50%;
 			}
 
 			#main > .posts > * {
 				padding: 4rem;
-				width: 100%;
+				width: 50%;
 			}
 
 			#main > .posts > article {
@@ -3884,12 +3884,12 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
-					width: 100%;
+					width: 50%;
 				}
 
 				#main > .posts > * {
 					padding: 2.5rem;
-					width: 100%;
+					width: 50%;
 				}
 
 			}
